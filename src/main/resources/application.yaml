@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: da-09
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/da
+    username: root
+    password: pass123
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: kuromahiru0505@gmail.com
+    password: tugjaqwmwvagozxz
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  servlet:
+    multipart:
+      max-file-size: 2GB
+      max-request-size: 2GB
+  main:
+    allow-circular-references: true
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google:
+#            client-id: 479177731785-grlcmutd5lmlr0ro4a5chkl01hsdk1ct.apps.googleusercontent.com
+#            client-secret: GOCSPX-_Tfy19l3HuRmgAjrgPQs5Rwa9xM
+#            scope: email, profile
